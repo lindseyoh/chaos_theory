@@ -65,3 +65,17 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.centerimg {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    img {
+        width: 17vw;
+        height: 17vw;
+    }
+}
+
+.space {
+    height: 15vh;
+}
