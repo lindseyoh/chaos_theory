@@ -520,7 +520,7 @@
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.4 });
 
     // Wait 900ms before starting to watch anything — this ensures the cover
     // animation has time to play and the user is oriented before scroll
@@ -533,7 +533,7 @@
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight && rect.bottom > 0) {
                 // In view on load — stagger by vertical position
-                const stagger = Math.round((rect.top / window.innerHeight) * 400);
+                const stagger = Math.round((rect.top / window.innerHeight) * 600);
                 setTimeout(() => reveal(el), stagger);
             } else {
                 observer.observe(el);
