@@ -193,7 +193,7 @@
     if (containers[0]) {
         buildPendulum(containers[0], {
             arms: [
-                { a1: Math.PI/0.25, a2: Math.PI/3, rgb: [255,255,255] },
+                { a1: Math.PI/3.5, a2: Math.PI/0.5, rgb: [255,255,255] },
             ],
         });
     }
