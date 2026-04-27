@@ -193,18 +193,26 @@
     if (containers[0]) {
         buildPendulum(containers[0], {
             arms: [
-                { a1: Math.PI/3.5, a2: Math.PI/0.5, rgb: [255,255,255] },
+                { a1: Math.PI/4, a2: Math.PI/4, rgb: [255,255,255] },
+            ],
+        });
+    }
+
+    if (containers[1]) {
+        buildPendulum(containers[1], {
+            arms: [
+                { a1: Math.PI/2.5, a2: Math.PI/1.5, rgb: [255,255,255] },
             ],
         });
     }
 
     /* Twin comparison — same angle, velocity nudged by 0.001 rad/s on v1.
        Divergence becomes visible within ~3–5 seconds. */
-    if (containers[1]) {
-        buildPendulum(containers[1], {
+    if (containers[2]) {
+        buildPendulum(containers[2], {
             arms: [
                 { a1: Math.PI/1.7, a2: Math.PI/2,               rgb: [255,255,255] },
-                { a1: Math.PI/1.7, a2: Math.PI/2, v1: 0.05, rgb: [130,195,255] },
+                { a1: Math.PI/1.7, a2: Math.PI/2, v1: 0.015, rgb: [130,195,255] },
             ],
         });
     }

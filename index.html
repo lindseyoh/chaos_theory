@@ -45,7 +45,7 @@
                 This one, a Foucault pendulum at the Pantheon of Paris,<br>
                 was built to show how the Earth rotates.<br><br>
                 The swing stays straight, as the Earth turns beneath it.<br><br>
-                Even now, nearly 175 years since its first demo,<br>
+                Even now, nearly 175 years since its invention,<br>
                 people still gather around and watch.<br><br><br>
                 Something about its repetitive sway is hypnotic.<br><br><br>
                 Consistent.<br><br><br>
@@ -80,7 +80,7 @@
         <div class="leftP fade-in">
             <p>
                 Watch it sway.<br><br>
-                Pendulums aren't just predictable in practice, but also in principle: Every position leads to exactly one future, something so simple to predict that the math can be done on paper.<br><br>
+                Pendulums aren't just predictable in practice, but also in principle: Every position leads to exactly one future, something so simple to predict that the math can be done on paper, and simulated on computers.<br><br>
                 This is what Isaac Newton saw in the pendulum's swing. Physical proof that nature has clean, mathematical rules, and obeys them. If you have a pendulum's position and velocity, you can predict where it could be, at any moment in the future, forever.<br><br>
                 Within a pendulum, the universe seems to keep its promises.<br><br><br>
             </p>
@@ -99,9 +99,87 @@
             [ye double pendulum]
         </div>
         <div class="centerP fade-in">
-            <p>Same material, same gravity, just one more joint added below the first.<br>
-                The equations Newton saw in the pendulum still seem to govern every move.<br><br>
-                ...But what if we invite a twin dancer to the stage?
+            <p>
+                A Double Pendulum.<br><br>
+                Just one more arm added before the first.<br><br>
+                This one's movements are familiar,<br>
+                swaying back and forth, just like many pendulums do.<br>
+                It's clear that Newton's laws hold firm.<br><br>
+                But now, things can get <em>very</em> strange.<br><br>
+            </p>
+        </div>
+        <div class="double_pendulum fade-in">
+            [ye double pendulum]
+        </div>
+        <div class="centerP fade-in">
+            <p>
+                This is the same double pendulum,<br>
+                with its starting position set a little higher.<br><br>
+                From this simple adjustment,<br>
+                it now unpredictably jumps, loops, and<br>
+                zig-zags across the screen.<br><br>
+                It's future trajectory feels impossible to grasp.<br>
+                The path it takes can feel <em>random,</em><br>
+                but true randomness can't be predicted.<br><br>
+                The simulated pendulum is proof of this:<br>
+                Every move it takes is still derived from Newton's equations,<br>
+                meaning nothing is being invented, or left to chance.<br><br>
+
+                The math is perfect.<br>
+                The system is not.<br><br>
+                And this system has a name.<br>
+
+            </p>
+        </div>
+        <div class="centerP fade-in">
+            <p>
+                A <em>chaotic system.</em>
+            </p>
+        </div>
+        <div class="centerP fade-in">
+            <p>
+                Chaotic systems like double pendulums can exhibit<br>
+                complex, unpredictable motion.<br><br>
+                Predicting a chaotic double pendulum's first swing can be easy,<br>
+                but it's next 10, 20, 30 swings can become unfathomable.<br><br>
+                So where does this "chaos" come from?<br>
+            </p>
+        </div>
+
+        <svg class="divider fade-in" height="1" viewBox="0 0 700 1"><line x1="0" y1="0.5" x2="700" y2="0.5"/></svg>
+
+        <div class="centerP fade-in">
+            <p>
+                The "clock" below turns at 0.015 radians per second,<br>
+                and takes around 7 minutes to complete a full circle.<br><br>
+                If the clock arm was 10cm long,<br>
+                it would be turning at the pace of a garden snail.<br><br>
+
+
+            </p>
+        </div>
+
+        <div class="rotation-demo fade-in"></div>
+
+        <div class="centerP fade-in">
+            <p>
+                Trying to "push" a pendulum at a garden snail's pace would mean<br>
+                barely brushing your finger against it.<br><br>
+                So will a "push" this slow change anything at all?<br>
+                The results speak for themselves.<br><br>
+            </p>
+        </div>
+
+        <div class="centerP fade-in">
+            <p>
+                Below, there are two double pendulums<br>
+                with the exact same starting position.<br><br>
+
+                The white arm begins perfectly still,<br>
+                while the blue arm begins with the<br>
+                0.015 radians per second "push".<br>
+
+
             </p>
         </div>
 
@@ -109,10 +187,14 @@
             [two double pendulums!]
         </div>
         <div class="leftP fade-in">
-            <p>At first, they move together, with their sway appearing nearly identical over the first few seconds.<br>
-                Then something shifts, something small, getting gradually bigger over time.<br>
-                Soon enough, neither bears any semblance to the other, with each following the beat of their own drum.<br><br>
-                The rules stayed the same, nothing truly changed other than the tiny, nearly imperceptible difference in where you let the pendulums go.<br><br>
+            <p> For the first 10 seconds, they appear nearly identical.<br>
+                The line they draw doesn't diverge.<br>
+                But then, something shifts,<br>
+                and the pendulums start to stray.<br>
+                ...Soon enough, neither pendulum bears any semblance to the other,<br>
+                with each following the beat of their own drum.<br><br>
+                Same rules, same gravity, same starting height.<br>
+                 Nothing truly changed other than the tiny, nearly imperceptable differnece in their starting velocity.<br><br>
             </p>
         </div>
 
@@ -140,8 +222,11 @@
         </div>
 
         <div class="leftP fade-in">
-            <p>This is what Edward Lorenz, an American Mathematician and Meteorologist, observed in his work while at MIT. On a primitive computer, he constructed a weather model using differential equations for changes in temperature, pressure, wind velocity, among 9 other variables. The simulation ran continuously, making data that resembled naturally occurring weather patterns.<br><br>
-                In January 1961, Lorenz took a shortcut. Instead of starting over to examine an earlier run, he started midway through, manually typing in the numbers himself for the machine's initial conditions from an earlier printout.<br><br>
+            <p>This is what Edward Lorenz, an American Mathematician and Meteorologist, observed in his work while at MIT.<br><br>
+                Like Newton and the pendulum, Lorenz pursued how to predict the future using physics and math. In his case: the weather.<br> 
+                In an effort to find a way to forecast the future, he built a simulaton using twelve differential equations on a primitive computer. It ran continuously, producing patterns that uncannily resembled real, believable weather.<br><br>
+                But in January 1961, Lorenz took a shortcut. Instead of starting over to examine an earlier run, he started midway through, manually typing in the numbers himself for the machine's initial conditions from an earlier printout.<br><br>
+
                 Instead of producing a copy of the earlier run, the new run showed dramatically different results, so much so that within a few simulated "months", neither run seemed to resemble the other.
             </p>
         </div>
@@ -177,9 +262,9 @@
         </div>
 
         <div class="centerP fade-in">
-            <p>So, was Newton wrong?<br><br>
+            <p>So, is Newton wrong?<br><br>
                 No, his rules hold.<br><br>
-                Chaos Theory simply helped scientists understand just how fragile those rules are.
+                Chaos Theory simply revealed just how fragile those rules are.
             </p>
         </div>
 
@@ -188,5 +273,6 @@
     <script src="main.js"></script>
     <script src="pendulum-single.js"></script>
     <script src="pendulum-double.js"></script>
+    <script src="rotation-demo.js"></script>
 </body>
 </html>
