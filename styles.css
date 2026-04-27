@@ -48,6 +48,10 @@ p {
     padding: 10vh 0;
 }
 
+.leftP a {
+    text-decoration: underline;
+    color: white;
+}
 .centertext {
     text-align: center;
 }
