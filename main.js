@@ -145,3 +145,58 @@ setTimeout(() => {
         }
     });
 }, 900);
+
+/* ═══════════════════════════════════════════
+   BACK TO TOP BUTTON
+   Fades in after scrolling 40% of the page.
+   Fixed to bottom-left, unobtrusive.
+   ═══════════════════════════════════════════ */
+
+(function () {
+    const btn = document.createElement('button');
+    btn.textContent = '↑';
+    btn.setAttribute('aria-label', 'Back to top');
+    Object.assign(btn.style, {
+        position:       'fixed',
+        bottom:         '2rem',
+        left:           '2rem',
+        zIndex:         '100',
+        background:     'transparent',
+        border:         '2px solid rgba(255,255,255,0.5)',
+        color:          'rgba(255,255,255,0.5)',
+        fontSize:       '0.85rem',
+        width:          '2.2rem',
+        height:         '2.2rem',
+        borderRadius:   '50%',
+        cursor:         'pointer',
+        opacity:        '0',
+        transition:     'opacity 0.5s ease, color 0.2s, border-color 0.2s',
+        pointerEvents:  'none',
+        lineHeight:     '1',
+    });
+
+    btn.addEventListener('mouseenter', () => {
+        btn.style.color       = 'rgba(255,255,255)';
+        btn.style.borderColor = 'rgba(255,255,255)';
+    });
+    btn.addEventListener('mouseleave', () => {
+        btn.style.color       = 'rgba(255,255,255,0.5)';
+        btn.style.borderColor = 'rgba(255,255,255,0.5)';
+    });
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.body.appendChild(btn);
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrolled > 0.15) {
+            btn.style.opacity      = '1';
+            btn.style.pointerEvents = 'auto';
+        } else {
+            btn.style.opacity      = '0';
+            btn.style.pointerEvents = 'none';
+        }
+    }, { passive: true });
+})();

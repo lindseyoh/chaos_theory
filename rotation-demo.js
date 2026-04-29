@@ -48,7 +48,7 @@
         marginTop: '8px',
         fontSize: '0.7rem',
         letterSpacing: '0.15em',
-        color: 'rgba(255,255,255,0.2)',
+        color: 'rgba(255,255,255)',
         fontFamily: "'Courier New', monospace",
         transition: 'opacity 0.4s',
     });
